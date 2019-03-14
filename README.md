@@ -4,9 +4,7 @@
  - [English](#english)
  - [中文（Chinese）](#中文chinese)
 
-Rating Tools: [https://phodal.github.io/new-project-checklist/rating/](https://phodal.github.io/new-project-checklist/rating/)
-
-Web: TBC
+Online Tools: https://phodal.github.io/new-project-checklist/
 
 ## English
 
@@ -43,12 +41,17 @@ Description: a good documentation should be versionable.
  - [ ] editor configuration and code style specification
  - [ ] mode and style guide
 
-**4.Project Evolution**
+**4.Security**
+
+ - [ ] test strategy.test layered, test pyramid.
+ - [ ] test automation. 
+
+**5.Project Evolution**
 
  - [ ] future technology stack
  - [ ] system evolution plan
 
-**5. Security**
+**6. Security**
 
  - [ ] security standard. Is safety more important, or is the experience more important?
  - [ ] data encrypt in the code.
@@ -152,19 +155,30 @@ Explanation: What are we doing, where are we going?
   - [ ] 现有的技术栈及其关系
 
 **3. 代码库**
- - [ ] 搭建指南
- - [ ] 架构决策记录
- - [ ] 编辑器配置和代码风格规范
- - [ ] 模式和风格指南
+ - [ ] 搭建指南。
+ - [ ] 架构决策记录。放置在代码库的 ``docs/adr`` 目录中。
+ - [ ] 编辑器配置和代码风格规范。
+ - [ ] 模式和风格指南。
+ - [ ] 分支管理模式。GitFlow 或者 master，或者 Feature Branch。
+ - [ ] 代码提交风格。
 
-**4. 项目演进**
+**4. 测试**
+ - [ ] 测试策略。测试层级, 测试金字塔。
+ - [ ] 自动化测试。
+
+**5. 项目演进**
  - [ ] 未来的技术栈
  - [ ] 系统的演进方案
 
-**5. 安全**
+**6. 安全**
  - [ ] 安全标准。安全更重要，还是体验更重要？
  - [ ] 代码中的数据加密。
  - [ ] 代码安全。
+
+**7. 质量**
+ - [ ] 项目质量跟踪。
+ - [ ] 代码质量可视化。
+ - [ ] 应用质量策略。
 
 ### Process
 

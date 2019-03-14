@@ -377,6 +377,15 @@ gulp.task('json-rebuild-all', () => {
     });
 });
 
+gulp.task('readme', () => {
+  return gulp.src(`./data/${argv.l}/_items.json`)
+    // .pipe(data => {
+    //   console.log(data);
+    //   return new Buffer(JSON.stringify(data));
+    // })
+    .pipe(gulp.dest(`./README.generate`))
+});
+
 gulp.task('copy', () => {
   return gulp.src([
     // Copy all files
@@ -418,7 +427,7 @@ gulp.task('build', done => {
     ['lint-css'],
     ['compile-all-pug'],
     ['compile-styles', 'compress-images', 'webpack'],
-    ['cdn'],
+    // ['cdn'],
     ['copy'],
     ['minify-html'],
     done
